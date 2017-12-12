@@ -1,5 +1,9 @@
 #splashscreen{
     color: #dd8437;
     text-align: center;
-    
+    padding-top: 16em;
+}
+
+#sub{
+   border-bottom: 2px solid white;
 }
