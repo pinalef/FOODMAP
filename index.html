@@ -6,18 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
     <title>FOODMAP</title>
 </head>
 <body>
 <!-- pantalla inicio -->
-  <div class="container-fluid " id="splashscreen">
-    <div class="row ">
-      <div class=".col-xs-12	.col-sm-12">
-        <h1>F O O D M A P</h1>
-      </div>
+<div class="container-fluid " id="splashscreen">
+  <div class="row ">
+    <div class="col-xs-12	col-sm-12">
+      <h1 class="tittle">F O O D M A P</h1>
     </div>
   </div>
+</div>
+<!-- pantalla principal -->
+<div class="container" id="home">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <h1 id="bottom-line" class="tittle">Foodmap</h1>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.5657990984246!2d-70.63693618531686!3d-33.434562780778414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af25%3A0x4d54c5eee2fd57ce!2sPatio+Bellavista!5e0!3m2!1ses-419!2scl!4v1513196118450" allowfullscreen></iframe>
+    </div>
+    <div class="col-xs-12 col-sm-12">
+        <h3 class="tittle">Comida cerca de ti</h3>
+    </div>
+    <div class="col-xs-12 col-sm-12">
+        <select id="categorias" class="form-control">
+            <option value="">Seleccionar...</option>
+            <option value="italiana">Italiana</option>
+            <option value="japonesa">Japonesa</option>
+            <option value="hamburguesas">Hamburguesas</option>
+          </select>
+      <div id="container"></div>
+    </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6"><img class="img-rounded restaurants" src="assets/img/kiseki.jpg" alt=""></div>
+    <div class="col-xs-6"><img class="img-rounded restaurants" src="assets/img/la-gran-mechada-portena-logo.jpg" alt=""></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 "><img class="img-rounded restaurants" src="assets/img/la-mangiata.jpg" alt=""></div>
+    <div class="col-xs-4 "><img class="img-rounded restaurants" src="assets/img/logo-brecons-valparaiso.jpg" alt=""></div>
+    <div class="col-xs-4 "><img class="img-rounded restaurants" src="assets/img/tomodachi-house.jpg" alt=""></div>
+  </div>
+</div>
+  </div>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
