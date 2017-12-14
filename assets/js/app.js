@@ -10,8 +10,8 @@ $(document).ready(function(){
   $('#categorias').on('change', function() {
     var selection = $('#categorias').val();
     //cont.text(selection);
-    if( selection === "china") {
-    cont.html('<p>Hola esto es un append Chino</p><img src="http://www.moonkitty.net/avatars/new-sailor-moon-images/new-sailor-moon-image-icon36.jpg"/><img src="http://www.moonkitty.net/avatars/new-sailor-moon-images/new-sailor-moon-image-icon36.jpg"/>');
+    if( selection === "italiana") {
+    cont.html('<img src="../assets/img/italian1.jpg"/>');
     }
     if( selection === "venezolana") {
     cont.html('<p>Hola esto es un append Venezolano</p> <img src="http://www.moonkitty.net/avatars/sailor-moon-manga-avatar-001.jpg"/> <img src="http://www.moonkitty.net/avatars/sailor-moon-manga-avatar-001.jpg"/>');
