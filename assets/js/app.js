@@ -11,16 +11,65 @@ $(document).ready(function(){
     var selection = $('#categorias').val();
     //cont.text(selection);
     if( selection === "italiana") {
-    cont.html('<img src="../assets/img/italian1.jpg"/>');
+    $('#1').hide();  
+    $('#2').hide();
+    $('#4').hide();
+    $('#5').hide();
+    $('#3').show();
+    console.log('entra a italiana');
     }
-    if( selection === "venezolana") {
-    cont.html('<p>Hola esto es un append Venezolano</p> <img src="http://www.moonkitty.net/avatars/sailor-moon-manga-avatar-001.jpg"/> <img src="http://www.moonkitty.net/avatars/sailor-moon-manga-avatar-001.jpg"/>');
+    if( selection === "japonesa") {
+    $('#1').show();  
+    $('#2').hide();
+    $('#4').hide();
+    $('#5').show();
+    $('#3').hide();
     }
-    if( selection === "arabe") {
-    cont.html('<p>Hola esto es un append Árabe</p> <img src="http://images6.fanpop.com/image/photos/34800000/Sailor-Moon-icon-sailor-moon-34857518-100-100.gif"/><img src="http://images6.fanpop.com/image/photos/34800000/Sailor-Moon-icon-sailor-moon-34857518-100-100.gif"/>');
+    if( selection === "hamburguesas") {
+      $('#1').hide();  
+      $('#2').show();
+      $('#4').show();
+      $('#5').hide();
+      $('#3').hide();
     }
-    if( selection === "peruana") {
-    cont.html('<p>Hola esto es un append Peruano</p> <img src="https://v.dreamwidth.org/303319/106183"/><img src="https://v.dreamwidth.org/303319/106183"/>');
+    if(selection === ""){
+      $('#1').show();  
+      $('#2').show();
+      $('#4').show();
+      $('#5').show();
+      $('#3').show();
     }
+  })
+
+  /* evento mouse over sobre las imagenes */
+  $('#1').mouseover(function(){
+      $('#idKiseki').attr('src', 'assets/img/japo1.jpg');
+  });
+  $('#1').mouseout(function(){
+    $('#idKiseki').attr('src', 'assets/img/kiseki.jpg');
+  })
+  $('#2').mouseover(function(){
+    $('#idMechada').attr('src', 'assets/img/ham1.jpeg');
+});
+$('#2').mouseout(function(){
+  $('#idMechada').attr('src', 'assets/img/la-gran-mechada-portena-logo.jpg');
+})
+$('#3').mouseover(function(){
+  $('#idMangiata').attr('src', 'assets/img/italian1.jpg');
+});
+$('#3').mouseout(function(){
+$('#idMangiata').attr('src', 'assets/img/la-mangiata.jpg');
+})
+$('#4').mouseover(function(){
+  $('#idBrecons').attr('src', 'assets/img/ham2.jpeg');
+});
+$('#4').mouseout(function(){
+$('#idBrecons').attr('src', 'assets/img/logo-brecons-valparaiso.jpg');
+})
+$('#5').mouseover(function(){
+  $('#idTomodachi').attr('src', 'assets/img/japo2.jpg');
+});
+$('#5').mouseout(function(){
+$('#idTomodachi').attr('src', 'assets/img/tomodachi-house.jpg');
 })
 });
